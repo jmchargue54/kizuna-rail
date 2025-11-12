@@ -16,3 +16,39 @@
 
 @import 'layout/all-layouts.css' layer(layout);
 
+@media print {
+    header, nav, footer, button, .confirmation-actions {
+        display: none;
+    }
+
+    main, .content, article {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+     body {
+        font-size: 12pt;
+        line-height: 1.4;
+        color: #000;
+        background: none;
+     }
+
+     * {
+        background: transparent;
+        box-shadow: none;
+        color: #000;
+     }
+
+     h1, h2, h3 {
+        page-break-after: avoid;
+     }
+
+     .next-steps {
+        page-break-before: always;
+     }
+
+     @page {
+        margin: 1in;
+     }
+}
