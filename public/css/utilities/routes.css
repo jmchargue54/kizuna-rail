@@ -1,3 +1,20 @@
+#filters {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    width: 100%;
+
+    .season-filter-section {
+        grid-column: 1 / 2;
+        place-self: center;
+    }
+
+    .region-filter-section {
+        grid-row: 1/2;
+        grid-column: 2 / 3;
+        place-self: center;
+    }
+}
+
 .routes-grid {
     display: flex;
     flex-direction: column;

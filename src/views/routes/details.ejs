@@ -63,7 +63,7 @@
             <h2>Operating Schedule</h2>
             <div class="months-grid">
                 <% details.operatingMonths.forEach(function(month) { %>
-                <span class="month-badge"><%= month %></span>
+                <span class="month-badge"><%= monthNumberToName(month) %></span>
                 <% }); %>
             </div>
         </div>
@@ -97,6 +97,7 @@
         </div>
         <% } %>
     </div>
+    <a href="/routes" class="back-to-routes">Back to Results</a>
 </article>
 
 <%- include('../partials/footer') %>
